@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["dean.greg@gmail.com"]
 
   spec.summary       = 'API Client for Genome'
-  spec.homepage      = "getgenome.com"
+  spec.homepage      = "http://getgenome.com"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

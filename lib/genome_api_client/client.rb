@@ -1,5 +1,4 @@
 module GenomeApi
-  # Your code goes here...
   class Client
     include HTTParty
     base_uri ENV['GENOME_API_URL']
@@ -14,7 +13,7 @@ module GenomeApi
       self.class.get("/users/#{id}")
     end
 
-    def create_user()
+    def create_user
       self.class.post("/users")
     end
   end
