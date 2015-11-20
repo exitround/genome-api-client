@@ -9,12 +9,16 @@ module GenomeApi
       self.class.headers({ 'Authorization' => "Bearer #{token}"})
     end
 
-    def user(id)
+    def user
+      self.class.get('/user')
+    end
+
+    def users(id = nil)
       self.class.get("/users/#{id}")
     end
 
-    def create_user
-      self.class.post("/users")
+    def create_user(params = {})
+      self.class.post('/users', body:params)
     end
   end
 end
